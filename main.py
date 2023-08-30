@@ -5,9 +5,11 @@
 # test to check permissions granted to the file
 # print('hello world')
 
+#! test example 
 from bs4 import BeautifulSoup
 import requests
-url = 'https://www.tutorialspoint.com/index.htm'
+url = 'https://github.com/ReeceRenninger'
 req = requests.get(url)
 soup = BeautifulSoup(req.text, 'lxml')
-print(soup.title)
+print(soup.title) #should return <title>ReeceRenninger (Reece Renninger) · GitHub</title>
+
